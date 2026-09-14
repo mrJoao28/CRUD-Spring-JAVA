@@ -16,7 +16,7 @@ REST API for user management built with Java and Spring Boot. The project demons
 The application is intentionally small and easy to follow:
 
 - `Projeto4Application` — Spring Boot entry point.
-- `Routes` — REST controllers and HTTP endpoints.
+- `Routes` — REST controller and HTTP endpoints.
 - `User` — domain model returned by the API.
 - `UserRequest` — request payload used for create/update operations.
 - `Data` — in-memory user list with JSON file persistence in `data.json`.
@@ -32,7 +32,6 @@ Base path: `/userDB`
 | POST | `/newUser` | Create a user |
 | PATCH | `/updateUser/{id}` | Update a user |
 | DELETE | `/deleteUser/{id}` | Delete a user |
-| GET | `/health` | Application health check |
 
 Example request:
 
@@ -97,4 +96,4 @@ This is an educational CRUD project. Persistence is file-based rather than datab
 
 ## Project goal
 
-The project focuses on demonstrating Java fundamentals, Spring Boot REST API development, HTTP methods, request mapping, object modeling, and automated application-context testing.
+The project focuses on demonstrating Java fundamentals, Spring Boot REST API development, HTTP methods, request mapping, object modeling, JSON persistence, and automated application-context testing.
